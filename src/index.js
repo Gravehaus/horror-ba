@@ -8,6 +8,7 @@ import Contact from "./contact";
 // import Notfound from "./notfound";
 import Header from "./header";
 import Footer from "./footer";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const routing = (
   <Router>

@@ -1,19 +1,24 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import Navbar from 'react-bootstrap/Navbar'
+
+// import { NavLink } from "react-router-dom";
+
+
+
 
 function Header() {
   return (
-    <nav>
-      <NavLink exact activeClassName="active" to="/">
-        Home
-      </NavLink>
-      <NavLink activeClassName="active" to="/users">
-        Users
-      </NavLink>
-      <NavLink activeClassName="active" to="/contact">
-        Contact
-      </NavLink>
-    </nav>
+    <Navbar>
+    <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+    <Navbar.Toggle />
+    <Navbar.Collapse className="justify-content-end">
+      <Navbar.Text>
+        Signed in as: <a href="#login">Mark Otto</a>
+      </Navbar.Text>
+    </Navbar.Collapse>
+  </Navbar>
+  
+
   );
 }
 export default Header;
